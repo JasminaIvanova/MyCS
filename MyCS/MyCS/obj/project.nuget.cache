@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+oUZ0l6IknuiNiyGW7MAxxMJ8XrCNhKYwQvN8Qz0MCsBr8QFBjihfRXLdovWQexQcfpCtGPYIGXmy87dVDt00w==",
+  "dgSpecHash": "8KZrvVWia/OfVUfMtiwmtuyPcyCDtumMDeRLy8PSr2YyLPaa8l2Ir8fC7kAZ1pZxMm7gKY5UhnnhOva+So5xTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jessy\\source\\repos\\MyCS\\MyCS\\MyCS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jessy\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512",
+    "C:\\Users\\Jessy\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
