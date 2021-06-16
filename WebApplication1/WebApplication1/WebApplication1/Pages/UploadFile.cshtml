@@ -1,0 +1,10 @@
+﻿@page
+@model WebApplication1.Pages.UploadFileModel
+@{
+}
+    <br/>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" asp-for="Upload" id="selectedFile" style="display:none"/>
+        <input type="button" value="Upload" class="btn btn-primary" onclick="document.getElementById('selectedFile').click();"/>
+        <input type="submit"/>
+    </form>

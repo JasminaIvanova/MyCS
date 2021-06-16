@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jessy\\source\\repos\\MyCS\\MyCS\\MyCS.csproj",
+      "projectUniqueName": "C:\\tues\\MyCS\\MyCS\\MyCS\\MyCS.csproj",
       "projectName": "MyCS",
-      "projectPath": "C:\\Users\\Jessy\\source\\repos\\MyCS\\MyCS\\MyCS.csproj",
+      "projectPath": "C:\\tues\\MyCS\\MyCS\\MyCS\\MyCS.csproj",
       "packagesPath": "C:\\Users\\Jessy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jessy\\source\\repos\\MyCS\\MyCS\\obj\\",
+      "outputPath": "C:\\tues\\MyCS\\MyCS\\MyCS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jessy\\AppData\\Roaming\\NuGet\\NuGet.Config",

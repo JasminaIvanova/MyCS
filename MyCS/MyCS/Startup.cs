@@ -50,7 +50,7 @@ namespace MyCS
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Clients}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

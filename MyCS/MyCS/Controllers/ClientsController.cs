@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic.FileIO;
 using MyCS.Models;
 using System;
 using System.Collections.Generic;
@@ -19,9 +20,9 @@ namespace MyCS.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Index(List<ClientData> clientsData = null)
+        public IActionResult Index(List<List<string>> clientsData = null)
         {
-            clientsData = clientsData == null ? new List<ClientData>() : clientsData;
+            clientsData = clientsData == null ? new List<List<string>>() : clientsData;
             return View(clientsData);
         }
 
@@ -30,7 +31,7 @@ namespace MyCS.Controllers
         public IActionResult Index(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
         {
             #region Upload CSV
-            string fileName = $"{hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
+            string fileName = $"{Directory.GetCurrentDirectory()}{@"\Files"}" + "\\" + file.FileName;
             using (FileStream fileStream = System.IO.File.Create(fileName))
             {
                 file.CopyTo(fileStream);
@@ -38,40 +39,34 @@ namespace MyCS.Controllers
             }
             #endregion
 
-            var clientsData = this.GetClientsDataList(file.FileName);
-            return Index(clientsData);
+            var records = this.GetClientsDataList(file.FileName);
+            return Index(records);
         }
 
-        private List<ClientData> GetClientsDataList(string fileName)
+        private List<List<string>> GetClientsDataList(string fileName)
         {
-            List<ClientData> clientsData = new List<ClientData>();
+            List<List<string>> records = new List<List<string>>();
+            //List<ClientData> clientsData = new List<ClientData>();
             #region Read CSV
-            var path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\files"}" + "\\" + fileName;
-            using (var reader = new StreamReader(path))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            var path = $"{Directory.GetCurrentDirectory()}{@"\Files"}" + "\\" + fileName;
+            using (TextFieldParser csv = new TextFieldParser(path))
             {
-                csv.Read();
-                csv.ReadHeader();
-                while (csv.Read())
+                csv.SetDelimiters(new string[] { ";" });
+                csv.ReadLine();
+
+                while (!csv.EndOfData)
                 {
-                    var clientData = csv.GetRecord<ClientData>();
-                    clientsData.Add(clientData);
+                    
+                    string[] fields = csv.ReadFields();
+                    List<string> data = fields[0].Split(",").ToList();
+                    records.Add(data);
                 }
+                Console.WriteLine();
             }
+            return records;
             #endregion
 
-            #region Create CSV
-            path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\FilesTo"}";
-            using (var write = new StreamWriter(path + "\\NewFile.csv"))
-            using (var csv = new CsvWriter(write, CultureInfo.InvariantCulture))
-            {
-                csv.WriteRecords(clientsData);
 
-            }
-            #endregion
-
-            return clientsData;
         }
     }
 }
-   
