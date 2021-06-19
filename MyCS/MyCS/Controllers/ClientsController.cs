@@ -46,7 +46,7 @@ namespace MyCS.Controllers
         private List<List<string>> GetClientsDataList(string fileName)
         {
             List<List<string>> records = new List<List<string>>();
-            //List<ClientData> clientsData = new List<ClientData>();
+           
             #region Read CSV
             var path = $"{Directory.GetCurrentDirectory()}{@"\Files"}" + "\\" + fileName;
             using (TextFieldParser csv = new TextFieldParser(path))

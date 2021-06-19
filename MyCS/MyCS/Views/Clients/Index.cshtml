@@ -2,20 +2,26 @@
     ViewData["Title"] = " Upload Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-</div>
-
 @{
     Layout = "_Layout";
 }
 
+<div class="text-center">
+    <h1 class="display-4">Upload</h1>
+</div>
 
 <form asp-controller="Clients" asp-action="Index" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" value="" />
+    <input type="file" name="file" value="" class="myclass" />
     <hr />
-    <button type="submit"> Upload </button>
+    <button type="submit" class="btn btn-primary">Upload</button>
 </form>
+
+
+
+
+
+
+
 
 
 
