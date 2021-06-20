@@ -1,13 +1,10 @@
-﻿using System;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyCSFV.Data;
 using MyCSFV.Areas.Identity.Data;
-using MyCSFV.Data;
 
 [assembly: HostingStartup(typeof(MyCSFV.Areas.Identity.IdentityHostingStartup))]
 namespace MyCSFV.Areas.Identity
@@ -29,8 +26,11 @@ namespace MyCSFV.Areas.Identity
 
 
             });
+
+
         }
-
-
     }
 }
+
+      
+       
