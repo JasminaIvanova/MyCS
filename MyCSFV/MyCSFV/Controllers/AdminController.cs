@@ -20,11 +20,7 @@ namespace MyCSFV.Controllers
         {
             return View();
         }
-        public IActionResult CreateUser()
-        {
-            return View();
-        }
-
+    
         public IActionResult CreateUser(FormCollection form, IServiceProvider serviceProvider) 
         {
             var UserManager = serviceProvider.GetRequiredService<UserManager<MyCSFVUser>>();

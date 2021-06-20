@@ -10,8 +10,8 @@ using MyCSFV.Data;
 namespace MyCSFV.Migrations
 {
     [DbContext(typeof(MyCSFVContext))]
-    [Migration("20210619190542_init")]
-    partial class init
+    [Migration("20210620124729_CreateIdentitySchema")]
+    partial class CreateIdentitySchema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

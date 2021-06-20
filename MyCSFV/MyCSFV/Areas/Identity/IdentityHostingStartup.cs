@@ -23,8 +23,7 @@ namespace MyCSFV.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("DefaultConnection")));
 
-                services.AddDefaultIdentity<MyCSFVUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                 .AddRoles<IdentityRole>()
+                services.AddDefaultIdentity<MyCSFVUser>(options => options.SignIn.RequireConfirmedAccount = true).AddRoles<IdentityRole>()
                  .AddEntityFrameworkStores<MyCSFVContext>();
 
 

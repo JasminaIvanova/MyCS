@@ -8882,11 +8882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jessy\\source\\repos\\MyCSFV\\MyCSFV\\MyCSFV.csproj",
+      "projectUniqueName": "C:\\tues\\MyCS\\MyCSFV\\MyCSFV\\MyCSFV.csproj",
       "projectName": "MyCSFV",
-      "projectPath": "C:\\Users\\Jessy\\source\\repos\\MyCSFV\\MyCSFV\\MyCSFV.csproj",
+      "projectPath": "C:\\tues\\MyCS\\MyCSFV\\MyCSFV\\MyCSFV.csproj",
       "packagesPath": "C:\\Users\\Jessy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jessy\\source\\repos\\MyCSFV\\MyCSFV\\obj\\",
+      "outputPath": "C:\\tues\\MyCS\\MyCSFV\\MyCSFV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jessy\\AppData\\Roaming\\NuGet\\NuGet.Config",

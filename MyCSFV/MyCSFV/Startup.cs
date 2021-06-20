@@ -1,19 +1,11 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MyCSFV.Data;
 using MyCSFV.Areas.Identity.Data;
-using MyCSFV.Data;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyCSFV
@@ -87,11 +79,11 @@ namespace MyCSFV
                 IdentityResult role = await RoleManager.CreateAsync(new IdentityRole("SuperAdmin"));
 
                 adminUser = new MyCSFVUser();
-                adminUser.UserName = "hello@gmail.com";
-                adminUser.Email = "hello@gmail.com";
+                adminUser.UserName = "proba@gmail.com";
+                adminUser.Email = "proba@gmail.com";
                 adminUser.EmailConfirmed = true;
 
-                string pass = "1234567Аa@";
+                string pass = "1234567Аa!";
                 var admin = await UserManager.CreateAsync(adminUser, pass);
                 if (admin.Succeeded)
                 {
