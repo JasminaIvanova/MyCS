@@ -173,3 +173,13 @@ C:\Users\Jessy\source\repos\experian\experian\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Jessy\source\repos\experian\experian\obj\Debug\netcoreapp3.1\Razor\Views\Clients\UploadError.cshtml.g.cs
 C:\Users\Jessy\source\repos\experian\experian\obj\Debug\netcoreapp3.1\Razor\Views\ManualData\Index.cshtml.g.cs
 C:\Users\Jessy\source\repos\experian\experian\obj\Debug\netcoreapp3.1\Razor\Views\ManualData\Success.cshtml.g.cs
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.csprojAssemblyReference.cache
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.AssemblyInfoInputs.cache
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.AssemblyInfo.cs
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.csproj.CoreCompileInputs.cache
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.MvcApplicationPartsAssemblyInfo.cs
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.MvcApplicationPartsAssemblyInfo.cache
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.RazorAssemblyInfo.cache
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.RazorAssemblyInfo.cs
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.dll
+C:\tues\MyCS\experian\experian\obj\Debug\netcoreapp3.1\experian.pdb
