@@ -8882,11 +8882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\tues\\MyCS\\experian123\\experian\\MyCS-main\\experian\\experian\\experian.csproj",
+      "projectUniqueName": "C:\\tues\\MyCS\\experianProba\\experian\\MyCS-main\\experian\\experian\\experian.csproj",
       "projectName": "experian",
-      "projectPath": "C:\\tues\\MyCS\\experian123\\experian\\MyCS-main\\experian\\experian\\experian.csproj",
+      "projectPath": "C:\\tues\\MyCS\\experianProba\\experian\\MyCS-main\\experian\\experian\\experian.csproj",
       "packagesPath": "C:\\Users\\Jessy\\.nuget\\packages\\",
-      "outputPath": "C:\\tues\\MyCS\\experian123\\experian\\MyCS-main\\experian\\experian\\obj\\",
+      "outputPath": "C:\\tues\\MyCS\\experianProba\\experian\\MyCS-main\\experian\\experian\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jessy\\AppData\\Roaming\\NuGet\\NuGet.Config",
