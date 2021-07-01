@@ -144,6 +144,14 @@ namespace experian.Controllers
                 return View("CreateUser");
             }
 
+            var emailAlreadyExists = _db.Users.Any(x => x.Email == email);
+            if (emailAlreadyExists)
+            {
+                ViewBag.Error = true;
+                ViewBag.ErrorText = "Email already exists";
+                return View("Index");
+            }
+
             var newUser = new appUser();
             newUser.UserName = username;
             newUser.Email = email;
@@ -153,6 +161,8 @@ namespace experian.Controllers
 
             _db.Users.Add(newUser);
             _db.SaveChanges();
+            ViewBag.Error = false;
+            ViewBag.User = username;
             return View("Index");
         }
 

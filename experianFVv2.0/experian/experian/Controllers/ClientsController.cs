@@ -51,19 +51,30 @@ namespace experian.Controllers
                 ViewBag.ErrorText = "The file uploaded is not in the correct format, please upload a csv file";
                 return View("UploadError");
             }
+            if (System.IO.File.Exists(fileName))
+            {
+                error = true;
+                ViewBag.Error = error;
+                ViewBag.ErrorText = "The file you are trying to upload already exists on the file system!";
+                return View("UploadError");
+            }
             using (FileStream fileStream = System.IO.File.Create(fileName))
             {
                 
                 file.CopyTo(fileStream);
                 fileStream.Flush();
+               
             }
-            #endregion
 
+            #endregion
+            
             var records = this.GetClientsDataList(file.FileName);
+            
             if (success)
             {
                 return View("Success");
             }
+            
             return Index(records);
         }
 
@@ -96,6 +107,7 @@ namespace experian.Controllers
             //CalculateScore(records);
             addToFile(CalculateScore(records), path + "\\result" + fileName);
             success = true;
+            
             return records;
             #endregion
             

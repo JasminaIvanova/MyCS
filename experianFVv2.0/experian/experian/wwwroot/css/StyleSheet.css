@@ -37,7 +37,9 @@ a.hoverable:hover {
 
 button.text-dark {
     color: black !important;
-    margin-left: 850px;
+    position: fixed;
+    left: 1160px;
+    top: 15px;
     margin-top: 2px;
 }
 
